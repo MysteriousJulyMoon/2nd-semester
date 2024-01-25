@@ -1,4 +1,4 @@
-#include"func.hpp"
+#include"date.hpp"
 #include <fstream>
 #include <chrono>
 #include <ctime>
