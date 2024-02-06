@@ -12,7 +12,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 
 # Сказать программе, что должен быть исполняемый файл
-add_executable("${PROJECT_NAME}" main.cpp func.cpp func.hpp)
+add_executable("${PROJECT_NAME}" main.cpp)
 
-# Копирование файла
-file(COPY "input.txt" DESTINATION "/")
