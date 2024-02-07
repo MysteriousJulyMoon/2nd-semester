@@ -8,38 +8,45 @@ private:
     int length;
 
 public:
-    MyString(const char* s = "") {
+    MyString(const char* s = "") 
+{
         length = std::strlen(s);
         str = new char[length + 1];
         std::strcpy(str, s);
-    }
+ }
 
-    MyString(const MyString& other) {
+    MyString(const MyString& other) 
+{
         length = other.length;
         str = new char[length + 1];
         std::strcpy(str, other.str);
-    }
+ }
 
-    MyString& operator=(const MyString& other) {
-        if (this != &other) {
+    MyString& operator=(const MyString& other) 
+{
+        if (this != &other) 
+        {
             delete[] str;
             length = other.length;
             str = new char[length + 1];
             std::strcpy(str, other.str);
         }
         return *this;
-    }
+}
 
-    ~MyString() {
+    ~MyString() 
+{
         delete[] str;
-    }
+}
 
-    void display() {
+    void display() 
+{
         cout << str << endl;
-    }
+}
 };
 
-int main() {
+int main()
+{
     MyString str1("Hello");
     MyString str2 = str1;
     MyString str3;
