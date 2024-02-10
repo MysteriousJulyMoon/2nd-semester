@@ -2,7 +2,8 @@
 #include <cstring>
 using namespace std;
 
-class MyString {
+class MyString 
+{
 private:
     char* str;
     int length;
@@ -47,7 +48,7 @@ public:
 
 int main()
 {
-    MyString str1("Hello");
+    MyString str1("Good");
     MyString str2 = str1;
     MyString str3;
     str3 = str1;
